@@ -13,6 +13,11 @@ Namespace My
             If result = DialogResult.Abort Or DialogResult.No Then
                 e.Cancel = True
             End If
+
+            If result = DialogResult.Yes Then
+                Dim f As New bsod()
+                f.Show()
+            End If
         End Sub
 
     End Class
