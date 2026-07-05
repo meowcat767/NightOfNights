@@ -4,7 +4,7 @@
             Me.FormBorderStyle = FormBorderStyle.None
             Me.WindowState = FormWindowState.Maximized
             Me.TopMost = True
-            Me.BackColor = Color.RoyalBlue
+            Me.BackColor = Color.Blue
             Me.KeyPreview = True
 
             If lblText IsNot Nothing Then
