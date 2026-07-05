@@ -15,17 +15,6 @@
             If lblText IsNot Nothing Then
                 lblText.Text =
                     "A problem has been detected and Windows has been shut down to prevent damage to your computer." & vbCrLf &
-                    vbCrLf &
-                    "The problem seems to be caused by the following file: NightOfNights.exe" & vbCrLf &
-                    vbCrLf &
-                    "PAGE_FAULT_IN_SAKUYA_IZAYOI" & vbCrLf &
-                    vbCrLf &
-                    "If this is the first time you've seen this stop error screen, restart your computer..." & vbCrLf &
-                    vbCrLf &
-                    "Locate 'NightOfNights.exe' and drag it to the Recycling Bin." & vbCrLf &
-                    vbCrLf &
-                    "Technical information:" & vbCrLf &
-                    "*** STOP: 0x00000050 (0xFD309B8C, 0x00000000, 0x804E3D9F, 0x00000000)"
             End If
         Catch ex As Exception
             LogException(ex)
