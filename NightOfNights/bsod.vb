@@ -4,8 +4,13 @@
             Me.FormBorderStyle = FormBorderStyle.None
             Me.WindowState = FormWindowState.Maximized
             Me.TopMost = True
-            Me.BackColor = Color.Blue
+            ' Use a darker classic BSOD blue
+            Me.BackColor = Color.FromArgb(0, 0, 170)
             Me.KeyPreview = True
+
+            ' Reduce flicker by enabling double-buffering and optimized painting
+            Me.SetStyle(ControlStyles.OptimizedDoubleBuffer Or ControlStyles.AllPaintingInWmPaint Or ControlStyles.UserPaint, True)
+            Me.UpdateStyles()
 
             If lblText IsNot Nothing Then
                 lblText.Text =

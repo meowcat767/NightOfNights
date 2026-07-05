@@ -37,7 +37,7 @@ Partial Class bsod
         ' 
         ' Make the label fill the form and use the same background color so it appears
         ' as part of the BSOD screen instead of a white box.
-        lblText.BackColor = Color.RoyalBlue
+        lblText.BackColor = Color.FromArgb(0, 0, 170)
         lblText.Cursor = Cursors.No
         lblText.FlatStyle = FlatStyle.Flat
         lblText.Font = New Font("Consolas", 11.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
